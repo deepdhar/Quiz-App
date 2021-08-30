@@ -65,6 +65,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
                     <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/input_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:hint="Enter your name"
@@ -73,6 +74,7 @@
                 </com.google.android.material.textfield.TextInputLayout>
                 
                 <Button
+                    android:id="@+id/next_button"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Next"

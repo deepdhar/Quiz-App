@@ -3,9 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/correct_option.xml" value="0.382051282051282" />
         <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/gradient_background.xml" value="0.375" />
         <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.375" />
+        <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/option.xml" value="0.382051282051282" />
+        <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/selected_option.xml" value="0.382051282051282" />
+        <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/drawable/wrong_option.xml" value="0.382051282051282" />
         <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Deep Dhar/AndroidStudioProjects/QuizApp/app/src/main/res/layout/activity_question.xml" value="0.33" />
       </map>
     </option>
   </component>
