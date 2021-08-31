@@ -1,5 +1,6 @@
 package com.example.quizapp
 
+import android.content.Intent
 import android.graphics.Color
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
@@ -15,9 +16,14 @@ class QuestionActivity : AppCompatActivity() {
     private var questionList: ArrayList<QuestionData> ?= null
     private var selectedOption: Int = 0
 
+    private var name: String ?= null
+    private var score: Int = 0
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_question)
+
+        name = intent.getStringExtra(SetData.name)
 
         questionList = SetData.getQuestion()
 
@@ -59,6 +65,8 @@ class QuestionActivity : AppCompatActivity() {
                 val question = questionList!![currPosition-1]
                 if(question.correct_ans!=selectedOption) {
                     setOptionColor(selectedOption, R.drawable.wrong_option_bg)
+                } else {
+                    score++
                 }
                 setOptionColor(question.correct_ans, R.drawable.correct_option_bg)
                 if(currPosition == questionList!!.size)
@@ -72,7 +80,12 @@ class QuestionActivity : AppCompatActivity() {
                         setQuestion()
                     }
                     else -> {
-                        Toast.makeText(this,"OKOK",Toast.LENGTH_SHORT).show()
+                        var intent = Intent(this,ResultActivity::class.java)
+                        intent.putExtra(SetData.name, name.toString())
+                        intent.putExtra(SetData.score, score.toString())
+                        intent.putExtra("total size",questionList!!.size.toString())
+                        startActivity(intent)
+                        finish()
                     }
                 }
             }
