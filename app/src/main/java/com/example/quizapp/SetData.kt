@@ -2,6 +2,9 @@ package com.example.quizapp
 
 object SetData {
 
+    const val name: String = "name"
+    const val score: String = "0"
+
     fun getQuestion(): ArrayList<QuestionData> {
         val ques: ArrayList<QuestionData> = arrayListOf()
 
